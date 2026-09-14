@@ -5,7 +5,9 @@
 // All components reference images through this configuration.
 // =============================================================================
 
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
 const asset = (path) => `${base}${path.replace(/^\//, '')}`;
 
 // Reference images from Unsplash (free, high-quality, no CORS issues)

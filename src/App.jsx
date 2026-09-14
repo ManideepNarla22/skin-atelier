@@ -50,6 +50,8 @@ function App() {
             <Route path="/services/aesthetics" element={<Navigate to="/services" replace />} />
             <Route path="/services/hair" element={<Navigate to="/services" replace />} />
             <Route path="/contact" element={<Contact />} />
+            {/* Catch-all route to redirect any unmatched route to / */}
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>
       </main>
