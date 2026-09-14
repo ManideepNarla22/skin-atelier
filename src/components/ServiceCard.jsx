@@ -12,7 +12,7 @@ const ServiceCard = ({ service, className = '' }) => {
         />
       </div>
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="font-heading text-xl font-medium text-gray-900 mb-3">
+        <h3 className="font-heading text-xl font-medium text-text mb-3">
           {service.title}
         </h3>
         <p className="text-gray-600 text-sm line-clamp-3 mb-4 flex-grow">
@@ -21,7 +21,7 @@ const ServiceCard = ({ service, className = '' }) => {
         {service.slug && (
           <Link 
             to={`/services/${service.slug}`} 
-            className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors mt-auto"
+            className="inline-flex items-center text-sm font-medium text-accent hover:text-accent-dark transition-colors mt-auto"
           >
             Explore <ArrowRight className="ml-1 w-4 h-4" />
           </Link>

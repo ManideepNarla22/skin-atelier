@@ -80,28 +80,28 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
           {/* Step 1 */}
           <div className="flex flex-col space-y-4">
-            <span className="font-heading text-5xl text-primary/20">01</span>
+            <span className="font-heading text-5xl text-accent/30">01</span>
             <p className="text-gray-800 text-lg md:text-xl">
               A thorough consultation before any treatment plan is proposed
             </p>
           </div>
           {/* Step 2 */}
           <div className="flex flex-col space-y-4">
-            <span className="font-heading text-5xl text-primary/20">02</span>
+            <span className="font-heading text-5xl text-accent/30">02</span>
             <p className="text-gray-800 text-lg md:text-xl">
               Treatment plans personalised to your skin type, condition and goals
             </p>
           </div>
           {/* Step 3 */}
           <div className="flex flex-col space-y-4">
-            <span className="font-heading text-5xl text-primary/20">03</span>
+            <span className="font-heading text-5xl text-accent/30">03</span>
             <p className="text-gray-800 text-lg md:text-xl">
               A blend of medical dermatology and modern aesthetic technology
             </p>
           </div>
           {/* Step 4 */}
           <div className="flex flex-col space-y-4">
-            <span className="font-heading text-5xl text-primary/20">04</span>
+            <span className="font-heading text-5xl text-accent/30">04</span>
             <p className="text-gray-800 text-lg md:text-xl">
               Clear communication about expected results, timelines and aftercare
             </p>

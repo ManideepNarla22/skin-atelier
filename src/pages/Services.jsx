@@ -109,13 +109,13 @@ const ServiceSection = ({ service, index, fadeRef }) => {
 
         {/* Text */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center space-y-5">
-          <p className="text-xs font-medium tracking-[0.2em] uppercase text-primary">
+          <p className="text-xs font-medium tracking-[0.2em] uppercase text-accent">
             Treatment {String(index + 1).padStart(2, '0')}
           </p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-[2.5rem] font-light leading-tight text-text">
             {service.title}
           </h2>
-          <div className="w-12 h-0.5 bg-primary" />
+          <div className="w-12 h-0.5 bg-accent" />
           <p className="text-base md:text-lg text-text-light leading-relaxed">
             {service.description}
           </p>

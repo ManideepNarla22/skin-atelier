@@ -80,7 +80,7 @@ const ConsultationForm = ({ className = '' }) => {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-primary focus:border-primary outline-none transition-colors"
+                className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-accent focus:border-accent outline-none transition-colors"
                 placeholder="Name"
               />
             </div>
@@ -94,7 +94,7 @@ const ConsultationForm = ({ className = '' }) => {
                 required
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-primary focus:border-primary outline-none transition-colors"
+                className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-accent focus:border-accent outline-none transition-colors"
                 placeholder="+91 XXXXX XXXXX"
               />
             </div>
@@ -106,7 +106,7 @@ const ConsultationForm = ({ className = '' }) => {
                 name="concern"
                 value={formData.concern}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-primary focus:border-primary outline-none transition-colors bg-white"
+                className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-accent focus:border-accent outline-none transition-colors bg-white"
               >
                 <option value="" disabled>Select an option</option>
                 <option value="Skin">Skin Treatment</option>
@@ -125,7 +125,7 @@ const ConsultationForm = ({ className = '' }) => {
                 value={formData.date}
                 onChange={handleChange}
                 min={new Date().toISOString().split('T')[0]}
-                className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-primary focus:border-primary outline-none transition-colors"
+                className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-accent focus:border-accent outline-none transition-colors"
               />
             </div>
 

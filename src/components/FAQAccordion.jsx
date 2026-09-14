@@ -23,12 +23,12 @@ const FAQAccordion = ({ items = [], className = '' }) => {
               className="flex justify-between items-center w-full py-5 text-left focus:outline-none"
               aria-expanded={isOpen}
             >
-              <span className="text-lg font-medium text-gray-900 font-heading">
+              <span className="text-lg font-medium text-text font-heading">
                 {item.question}
               </span>
               <ChevronDown 
                 className={`w-5 h-5 text-gray-500 transition-transform duration-300 flex-shrink-0 ml-4 ${
-                  isOpen ? 'rotate-180 text-primary' : ''
+                  isOpen ? 'rotate-180 text-accent' : ''
                 }`} 
               />
             </button>

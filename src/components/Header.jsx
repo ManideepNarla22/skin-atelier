@@ -57,8 +57,8 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8">
-          <NavLink to="/" className={({ isActive }) => `text-sm font-medium hover:text-primary transition-colors ${isActive ? 'text-primary' : 'text-text'}`}>Home</NavLink>
-          <NavLink to="/about" className={({ isActive }) => `text-sm font-medium hover:text-primary transition-colors ${isActive ? 'text-primary' : 'text-text'}`}>About</NavLink>
+          <NavLink to="/" className={({ isActive }) => `text-sm font-medium hover:text-accent transition-colors ${isActive ? 'text-accent font-semibold' : 'text-text'}`}>Home</NavLink>
+          <NavLink to="/about" className={({ isActive }) => `text-sm font-medium hover:text-accent transition-colors ${isActive ? 'text-accent font-semibold' : 'text-text'}`}>About</NavLink>
           
           {/* Services Dropdown */}
           <div 
@@ -66,7 +66,7 @@ const Header = () => {
             onMouseEnter={() => setServicesDropdownOpen(true)}
             onMouseLeave={() => setServicesDropdownOpen(false)}
           >
-            <button className="flex items-center text-sm font-medium text-text hover:text-primary transition-colors cursor-pointer">
+            <button className="flex items-center text-sm font-medium text-text hover:text-accent transition-colors cursor-pointer">
               Services <ChevronDown className="ml-1 w-4 h-4" />
             </button>
             
@@ -74,15 +74,15 @@ const Header = () => {
               <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[720px] bg-white shadow-xl rounded-b-lg border-t border-border-light z-50">
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-4 pb-3 border-b border-border-light">
-                    <span className="text-xs font-semibold tracking-widest uppercase text-primary">Our Treatments</span>
-                    <Link to="/services" className="text-xs text-text-light hover:text-primary transition-colors">View All →</Link>
+                    <span className="text-xs font-semibold tracking-widest uppercase text-accent">Our Treatments</span>
+                    <Link to="/services" className="text-xs text-text-light hover:text-accent transition-colors">View All →</Link>
                   </div>
                   <ul className="grid grid-cols-3 gap-x-6 gap-y-2">
                     {navServices.map((service) => (
                       <li key={service.anchor}>
                         <Link
                           to={`/services${service.anchor}`}
-                          className="text-sm text-text-light hover:text-primary transition-colors block py-1.5"
+                          className="text-sm text-text-light hover:text-accent transition-colors block py-1.5"
                         >
                           {service.label}
                         </Link>
@@ -95,7 +95,7 @@ const Header = () => {
           </div>
 
 
-          <NavLink to="/contact" className={({ isActive }) => `text-sm font-medium hover:text-primary transition-colors ${isActive ? 'text-primary' : 'text-text'}`}>Contact</NavLink>
+          <NavLink to="/contact" className={({ isActive }) => `text-sm font-medium hover:text-accent transition-colors ${isActive ? 'text-accent font-semibold' : 'text-text'}`}>Contact</NavLink>
         </nav>
 
         {/* Desktop CTA */}
@@ -135,8 +135,8 @@ const Header = () => {
             className={({ isActive }) =>
               `flex items-center justify-between px-4 py-3.5 rounded-lg text-lg font-medium transition-colors border-b border-border-light/60 ${
                 isActive
-                  ? 'text-primary bg-primary/5 font-semibold'
-                  : 'text-text hover:text-primary hover:bg-warm-gray/40'
+                  ? 'text-accent bg-accent/5 font-semibold'
+                  : 'text-text hover:text-accent hover:bg-warm-gray/40'
               }`
             }
           >
@@ -150,8 +150,8 @@ const Header = () => {
             className={({ isActive }) =>
               `flex items-center justify-between px-4 py-3.5 rounded-lg text-lg font-medium transition-colors border-b border-border-light/60 ${
                 isActive
-                  ? 'text-primary bg-primary/5 font-semibold'
-                  : 'text-text hover:text-primary hover:bg-warm-gray/40'
+                  ? 'text-accent bg-accent/5 font-semibold'
+                  : 'text-text hover:text-accent hover:bg-warm-gray/40'
               }`
             }
           >
@@ -167,8 +167,8 @@ const Header = () => {
                 className={({ isActive }) =>
                   `flex-1 px-4 py-3.5 text-lg font-medium transition-colors ${
                     isActive
-                      ? 'text-primary bg-primary/5 font-semibold rounded-lg'
-                      : 'text-text hover:text-primary'
+                      ? 'text-accent bg-accent/5 font-semibold rounded-lg'
+                      : 'text-text hover:text-accent'
                   }`
                 }
               >
@@ -177,12 +177,12 @@ const Header = () => {
               <button
                 type="button"
                 onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                className="p-3.5 text-text hover:text-primary transition-colors focus:outline-none cursor-pointer"
+                className="p-3.5 text-text hover:text-accent transition-colors focus:outline-none cursor-pointer"
                 aria-label="Toggle Services submenu"
                 aria-expanded={mobileServicesOpen}
               >
                 {mobileServicesOpen ? (
-                  <ChevronUp className="w-5 h-5 text-primary" />
+                  <ChevronUp className="w-5 h-5 text-accent" />
                 ) : (
                   <ChevronDown className="w-5 h-5" />
                 )}
@@ -191,13 +191,13 @@ const Header = () => {
 
             {/* Expandable Submenu */}
             {mobileServicesOpen && (
-              <div className="ml-4 pl-3 border-l-2 border-primary/30 my-1 space-y-0.5 pb-2">
+              <div className="ml-4 pl-3 border-l-2 border-accent/30 my-1 space-y-0.5 pb-2">
                 {navServices.map((service) => (
                   <Link
                     key={service.anchor}
                     to={`/services${service.anchor}`}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block px-3 py-2 rounded-md text-sm font-medium text-text-light hover:text-primary hover:bg-warm-gray/40 transition-colors"
+                    className="block px-3 py-2 rounded-md text-sm font-medium text-text-light hover:text-accent hover:bg-warm-gray/40 transition-colors"
                   >
                     {service.label}
                   </Link>
@@ -214,8 +214,8 @@ const Header = () => {
             className={({ isActive }) =>
               `flex items-center justify-between px-4 py-3.5 rounded-lg text-lg font-medium transition-colors border-b border-border-light/60 ${
                 isActive
-                  ? 'text-primary bg-primary/5 font-semibold'
-                  : 'text-text hover:text-primary hover:bg-warm-gray/40'
+                  ? 'text-accent bg-accent/5 font-semibold'
+                  : 'text-text hover:text-accent hover:bg-warm-gray/40'
               }`
             }
           >

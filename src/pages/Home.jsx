@@ -27,7 +27,7 @@ const Home = () => {
       {/* 2. HERO Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12">
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-fixed"
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-scroll md:bg-fixed"
           style={{ backgroundImage: `url(${images.hero?.home || ''})` }}
         >
           <div className="absolute inset-0 bg-black/40 z-10"></div>
@@ -101,7 +101,7 @@ const Home = () => {
               <p className="text-gray-600 text-lg leading-relaxed font-light">
                 From acne and pigmentation to eczema, psoriasis and vitiligo, we diagnose and manage skin conditions with a medical, evidence-based approach.
               </p>
-              <Link to="/services/skin" className="inline-flex items-center text-primary font-medium border-b border-primary hover:text-accent hover:border-accent transition-colors pb-1">
+              <Link to="/services/skin" className="inline-flex items-center text-accent font-medium border-b border-accent hover:text-primary hover:border-primary transition-colors pb-1">
                 View Treatments <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </div>
@@ -121,7 +121,7 @@ const Home = () => {
               <p className="text-gray-600 text-lg leading-relaxed font-light">
                 Chemical peels, medi-facials, injectables and laser treatments designed to refresh, smooth and rejuvenate — administered by trained medical professionals.
               </p>
-              <Link to="/services/aesthetics" className="inline-flex items-center text-primary font-medium border-b border-primary hover:text-accent hover:border-accent transition-colors pb-1">
+              <Link to="/services/aesthetics" className="inline-flex items-center text-accent font-medium border-b border-accent hover:text-primary hover:border-primary transition-colors pb-1">
                 View Treatments <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </div>
@@ -141,7 +141,7 @@ const Home = () => {
               <p className="text-gray-600 text-lg leading-relaxed font-light">
                 Hair fall evaluation, PRP, GFC and scalp treatments to identify the root cause of hair and scalp concerns and treat them accordingly.
               </p>
-              <Link to="/services/hair" className="inline-flex items-center text-primary font-medium border-b border-primary hover:text-accent hover:border-accent transition-colors pb-1">
+              <Link to="/services/hair" className="inline-flex items-center text-accent font-medium border-b border-accent hover:text-primary hover:border-primary transition-colors pb-1">
                 View Treatments <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </div>
@@ -157,7 +157,7 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-4 mt-16">
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary shadow-sm mb-2">
+              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-accent shadow-sm mb-2">
                 <Stethoscope className="w-8 h-8" strokeWidth={1.5} />
               </div>
               <p className="text-gray-700 font-light text-sm md:text-base px-2">
@@ -166,7 +166,7 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary shadow-sm mb-2">
+              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-accent shadow-sm mb-2">
                 <ClipboardList className="w-8 h-8" strokeWidth={1.5} />
               </div>
               <p className="text-gray-700 font-light text-sm md:text-base px-2">
@@ -175,7 +175,7 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary shadow-sm mb-2">
+              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-accent shadow-sm mb-2">
                 <Sparkles className="w-8 h-8" strokeWidth={1.5} />
               </div>
               <p className="text-gray-700 font-light text-sm md:text-base px-2">
@@ -184,7 +184,7 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary shadow-sm mb-2">
+              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-accent shadow-sm mb-2">
                 <Heart className="w-8 h-8" strokeWidth={1.5} />
               </div>
               <p className="text-gray-700 font-light text-sm md:text-base px-2">
@@ -193,7 +193,7 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary shadow-sm mb-2">
+              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-accent shadow-sm mb-2">
                 <MapPin className="w-8 h-8" strokeWidth={1.5} />
               </div>
               <p className="text-gray-700 font-light text-sm md:text-base px-2">

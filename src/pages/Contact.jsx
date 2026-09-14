@@ -49,7 +49,7 @@ const Contact = () => {
               {/* Address */}
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 flex items-start space-x-4 transition-transform hover:-translate-y-1 duration-300">
                 <div className="bg-stone-50 p-3 rounded-full shrink-0 border border-stone-100">
-                  <MapPin className="w-6 h-6 text-stone-700" />
+                  <MapPin className="w-6 h-6 text-accent" />
                 </div>
                 <div>
                   <h3 className="font-serif text-xl text-stone-900 mb-2">Address</h3>
@@ -63,11 +63,11 @@ const Contact = () => {
               {/* Phone */}
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 flex items-start space-x-4 transition-transform hover:-translate-y-1 duration-300">
                 <div className="bg-stone-50 p-3 rounded-full shrink-0 border border-stone-100">
-                  <Phone className="w-6 h-6 text-stone-700" />
+                  <Phone className="w-6 h-6 text-accent" />
                 </div>
                 <div>
                   <h3 className="font-serif text-xl text-stone-900 mb-2">Phone</h3>
-                  <a href={businessInfo.phoneTel} className="text-stone-600 hover:text-stone-900 transition-colors block">
+                  <a href={businessInfo.phoneTel} className="text-stone-600 hover:text-accent transition-colors block">
                     +91 6303050820
                   </a>
                 </div>
@@ -76,11 +76,11 @@ const Contact = () => {
               {/* Email */}
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 flex items-start space-x-4 transition-transform hover:-translate-y-1 duration-300">
                 <div className="bg-stone-50 p-3 rounded-full shrink-0 border border-stone-100">
-                  <Mail className="w-6 h-6 text-stone-700" />
+                  <Mail className="w-6 h-6 text-accent" />
                 </div>
                 <div>
                   <h3 className="font-serif text-xl text-stone-900 mb-2">Email</h3>
-                  <a href="mailto:skinatelier66@gmail.com" className="text-stone-600 hover:text-stone-900 transition-colors block">
+                  <a href="mailto:skinatelier66@gmail.com" className="text-stone-600 hover:text-accent transition-colors block">
                     skinatelier66@gmail.com
                   </a>
                 </div>
@@ -89,7 +89,7 @@ const Contact = () => {
               {/* Working Hours */}
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 flex items-start space-x-4 transition-transform hover:-translate-y-1 duration-300">
                 <div className="bg-stone-50 p-3 rounded-full shrink-0 border border-stone-100">
-                  <Clock className="w-6 h-6 text-stone-700" />
+                  <Clock className="w-6 h-6 text-accent" />
                 </div>
                 <div>
                   <h3 className="font-serif text-xl text-stone-900 mb-2">Working Hours</h3>
@@ -108,7 +108,7 @@ const Contact = () => {
                     href="https://www.instagram.com/theskinatelier_official/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center text-stone-600 hover:text-stone-900 transition-colors group"
+                    className="flex items-center text-stone-600 hover:text-accent transition-colors group"
                   >
                     <ExternalLink className="w-4 h-4 mr-2 opacity-70 group-hover:opacity-100 transition-opacity" />
                     Instagram: @theskinatelier_official
@@ -117,7 +117,7 @@ const Contact = () => {
                     href="https://www.facebook.com/SkinAtelierHyd/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center text-stone-600 hover:text-stone-900 transition-colors group"
+                    className="flex items-center text-stone-600 hover:text-accent transition-colors group"
                   >
                     <ExternalLink className="w-4 h-4 mr-2 opacity-70 group-hover:opacity-100 transition-opacity" />
                     Facebook: Skin Atelier
@@ -142,7 +142,7 @@ const Contact = () => {
             
             <div className="relative z-10 bg-white/95 backdrop-blur-md p-8 md:p-10 rounded-2xl shadow-xl text-center max-w-md w-full border border-stone-200">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-stone-50 border border-stone-100 mb-6 shadow-sm">
-                <MapPin className="w-8 h-8 text-stone-800" />
+                <MapPin className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-2xl font-serif text-stone-900 mb-4">Skin Atelier</h3>
               <p className="text-stone-600 mb-8 leading-relaxed text-lg">

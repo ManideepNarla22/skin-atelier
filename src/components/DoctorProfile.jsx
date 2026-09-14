@@ -16,15 +16,15 @@ const DoctorProfile = ({ children, className = '' }) => {
                 className="w-full h-full object-cover object-center"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full -z-10 hidden md:block"></div>
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-secondary/10 rounded-full -z-10 hidden md:block"></div>
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/10 rounded-full -z-10 hidden md:block"></div>
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary/10 rounded-full -z-10 hidden md:block"></div>
           </div>
           
           <div className="w-full lg:w-7/12">
-            <span className="text-sm uppercase tracking-widest text-primary font-semibold mb-2 block">
+            <span className="text-sm uppercase tracking-widest text-accent font-semibold mb-2 block">
               Lead Dermatologist
             </span>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-medium text-gray-900 mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-medium text-text mb-6">
               Dr. Saritha Thotakura
               <span className="block text-xl md:text-2xl text-gray-500 font-normal mt-2">
                 MBBS, MD

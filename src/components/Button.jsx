@@ -13,12 +13,13 @@ const Button = ({
   const baseStyles = 'inline-flex items-center justify-center font-medium rounded transition-all duration-300 cursor-pointer select-none';
   
   const variants = {
-    primary: 'bg-primary text-white hover:bg-primary-dark shadow-sm hover:shadow',
-    secondary: 'bg-secondary text-white hover:bg-secondary-dark shadow-sm',
-    outline: 'border border-primary text-primary hover:bg-primary hover:text-white',
-    'outline-white': 'border border-white text-white hover:bg-white hover:text-primary',
+    primary: 'bg-accent text-white hover:bg-accent-dark shadow-sm hover:shadow',
+    secondary: 'bg-primary text-white hover:bg-primary-dark shadow-sm',
+    outline: 'border border-accent text-accent hover:bg-accent hover:text-white',
+    'outline-primary': 'border border-primary text-primary hover:bg-primary hover:text-white',
+    'outline-white': 'border border-white text-white hover:bg-white hover:text-accent',
     white: 'bg-white text-primary hover:bg-cream hover:text-primary-dark shadow-sm hover:shadow',
-    ghost: 'text-primary hover:text-primary-dark hover:bg-black/5',
+    ghost: 'text-accent hover:text-accent-dark hover:bg-accent/5',
   };
   
   const sizes = {

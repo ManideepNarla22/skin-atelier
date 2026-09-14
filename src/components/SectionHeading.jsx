@@ -16,11 +16,11 @@ const SectionHeading = ({
   return (
     <div className={`mb-10 ${alignments[align]} ${className} ${align === 'center' ? 'max-w-3xl' : ''}`}>
       {subtitle && (
-        <span className="block text-sm uppercase tracking-widest text-primary font-semibold mb-3">
+        <span className="block text-sm uppercase tracking-widest text-accent font-semibold mb-3">
           {subtitle}
         </span>
       )}
-      <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-medium text-gray-900 mb-4">
+      <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-medium text-text mb-4">
         {headingText}
       </h2>
       {description && (

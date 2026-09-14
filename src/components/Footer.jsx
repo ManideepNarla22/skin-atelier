@@ -20,21 +20,21 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary text-white pt-16 pb-8 mb-16 md:mb-0">
+    <footer className="bg-cream text-text border-t border-border pt-16 pb-8 mb-16 md:mb-0">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           
           {/* Column 1 - Brand */}
           <div className="space-y-6">
-            <Logo variant="light" />
-            <p className="text-gray-300 text-sm leading-relaxed">
+            <Logo imgClassName="h-16 md:h-20 w-auto" />
+            <p className="text-text-light text-sm leading-relaxed">
               Personalised dermatology and aesthetic care.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.instagram.com/theskinatelier_official/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/theskinatelier_official/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors" aria-label="Instagram">
                 <InstagramIcon className="w-5 h-5" />
               </a>
-              <a href="https://www.facebook.com/SkinAtelierHyd/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/SkinAtelierHyd/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors" aria-label="Facebook">
                 <FacebookIcon className="w-5 h-5" />
               </a>
             </div>
@@ -42,54 +42,54 @@ const Footer = () => {
 
           {/* Column 2 - Navigation */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Navigation</h3>
+            <h3 className="text-lg font-heading font-semibold text-primary mb-6">Navigation</h3>
             <ul className="space-y-4">
-              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors text-sm">Home</Link></li>
-              <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors text-sm">About</Link></li>
-              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">Services</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors text-sm">Contact</Link></li>
+              <li><Link to="/" className="text-text-light hover:text-accent transition-colors text-sm">Home</Link></li>
+              <li><Link to="/about" className="text-text-light hover:text-accent transition-colors text-sm">About</Link></li>
+              <li><Link to="/services" className="text-text-light hover:text-accent transition-colors text-sm">Services</Link></li>
+              <li><Link to="/contact" className="text-text-light hover:text-accent transition-colors text-sm">Contact</Link></li>
             </ul>
           </div>
 
           {/* Column 3 - Treatments */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Treatments</h3>
+            <h3 className="text-lg font-heading font-semibold text-primary mb-6">Treatments</h3>
             <ul className="space-y-4">
-              <li><Link to="/services#laser-hair-removal" className="text-gray-400 hover:text-white transition-colors text-sm">Laser Hair Removal</Link></li>
-              <li><Link to="/services#acne-scar-treatment" className="text-gray-400 hover:text-white transition-colors text-sm">Acne & Scar Treatment</Link></li>
-              <li><Link to="/services#hair-loss-treatment" className="text-gray-400 hover:text-white transition-colors text-sm">Hair Loss Treatment</Link></li>
-              <li><Link to="/services#anti-ageing-treatment" className="text-gray-400 hover:text-white transition-colors text-sm">Anti Ageing Treatment</Link></li>
-              <li><Link to="/services#chemical-peels" className="text-gray-400 hover:text-white transition-colors text-sm">Chemical Peels</Link></li>
-              <li><Link to="/services#skin-pigmentation" className="text-gray-400 hover:text-white transition-colors text-sm">Skin Pigmentation</Link></li>
+              <li><Link to="/services#laser-hair-removal" className="text-text-light hover:text-accent transition-colors text-sm">Laser Hair Removal</Link></li>
+              <li><Link to="/services#acne-scar-treatment" className="text-text-light hover:text-accent transition-colors text-sm">Acne & Scar Treatment</Link></li>
+              <li><Link to="/services#hair-loss-treatment" className="text-text-light hover:text-accent transition-colors text-sm">Hair Loss Treatment</Link></li>
+              <li><Link to="/services#anti-ageing-treatment" className="text-text-light hover:text-accent transition-colors text-sm">Anti Ageing Treatment</Link></li>
+              <li><Link to="/services#chemical-peels" className="text-text-light hover:text-accent transition-colors text-sm">Chemical Peels</Link></li>
+              <li><Link to="/services#skin-pigmentation" className="text-text-light hover:text-accent transition-colors text-sm">Skin Pigmentation</Link></li>
             </ul>
           </div>
 
 
           {/* Column 4 - Contact */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Contact</h3>
+            <h3 className="text-lg font-heading font-semibold text-primary mb-6">Contact</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <Phone className="w-5 h-5 mr-3 text-gray-400 flex-shrink-0 mt-0.5" />
-                <a href="tel:+916303050820" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Phone className="w-5 h-5 mr-3 text-accent flex-shrink-0 mt-0.5" />
+                <a href="tel:+916303050820" className="text-text-light hover:text-accent transition-colors text-sm">
                   +91 6303050820
                 </a>
               </li>
               <li className="flex items-start">
-                <Mail className="w-5 h-5 mr-3 text-gray-400 flex-shrink-0 mt-0.5" />
-                <a href="mailto:skinatelier66@gmail.com" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Mail className="w-5 h-5 mr-3 text-accent flex-shrink-0 mt-0.5" />
+                <a href="mailto:skinatelier66@gmail.com" className="text-text-light hover:text-accent transition-colors text-sm">
                   skinatelier66@gmail.com
                 </a>
               </li>
               <li className="flex items-start">
-                <MapPin className="w-5 h-5 mr-3 text-gray-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400 text-sm leading-relaxed">
+                <MapPin className="w-5 h-5 mr-3 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-text-light text-sm leading-relaxed">
                   4th Floor, 1-2-39/10, above Aakruti, Nizampet Main Road, Hyderabad
                 </span>
               </li>
               <li className="flex items-start">
-                <Clock className="w-5 h-5 mr-3 text-gray-400 flex-shrink-0 mt-0.5" />
-                <div className="text-gray-400 text-sm leading-relaxed">
+                <Clock className="w-5 h-5 mr-3 text-accent flex-shrink-0 mt-0.5" />
+                <div className="text-text-light text-sm leading-relaxed">
                   <p>9am – 8pm</p>
                   <p>Sunday Closed</p>
                 </div>
@@ -100,8 +100,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-gray-800 pt-8 mt-8">
-          <p className="text-center text-gray-500 text-sm">
+        <div className="border-t border-border pt-8 mt-8">
+          <p className="text-center text-text-muted text-sm">
             &copy; {currentYear} Skin Atelier. All rights reserved.
           </p>
         </div>

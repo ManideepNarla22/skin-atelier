@@ -3,19 +3,26 @@
 
 /* ─── Custom Design Tokens ───────────────────────────────────────────────── */
 @theme {
-  --color-primary: #8B6F5E;
-  --color-primary-light: #A68A7B;
-  --color-primary-dark: #6B5548;
-  --color-secondary: #2C2C2C;
-  --color-accent: #C4A882;
-  --color-cream: #FAF7F4;
+  --color-primary: #3D281D;
+  --color-primary-light: #5A3E2F;
+  --color-primary-dark: #26170F;
+  --color-secondary: #2C1A11;
+  --color-secondary-light: #442B1F;
+  --color-secondary-dark: #1C0F08;
+  --color-accent: #A85138;
+  --color-accent-light: #C26A50;
+  --color-accent-dark: #8E3F29;
+  --color-terracotta: #A85138;
+  --color-terracotta-light: #C26A50;
+  --color-terracotta-dark: #8E3F29;
+  --color-cream: #FAF6F2;
   --color-warm-white: #FDFCFB;
-  --color-warm-gray: #F5F0EB;
-  --color-text: #333333;
-  --color-text-light: #666666;
-  --color-text-muted: #999999;
-  --color-border: #E8E2DC;
-  --color-border-light: #F0EBE6;
+  --color-warm-gray: #F5EFEB;
+  --color-text: #2D231E;
+  --color-text-light: #63554D;
+  --color-text-muted: #96857B;
+  --color-border: #E8DDD5;
+  --color-border-light: #F2ECE7;
 
   --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -97,4 +104,11 @@ h1, h2, h3, h4, h5, h6 {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-primary);
+}
+
+/* ─── iOS WebKit Fix: Background Attachment ──────────────────────────────── */
+@supports (-webkit-touch-callout: none) {
+  [class*="bg-fixed"] {
+    background-attachment: scroll !important;
+  }
 }
