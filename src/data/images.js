@@ -31,6 +31,17 @@ const images = {
     doctor: asset('assets/doctor.webp'),
   },
 
+  // ─── Clinic Gallery (About page) ────────────────────────────────────────
+  clinicGallery: [
+    { src: asset('images/clinic_images/clinic-lounge-1.webp'), alt: 'Skin Atelier clinic lounge' },
+    { src: asset('images/clinic_images/clinic-lounge-2.webp'), alt: 'Skin Atelier clinic lounge' },
+    { src: asset('images/clinic_images/clinic-lounge-3.webp'), alt: 'Skin Atelier clinic seating area' },
+    { src: asset('images/clinic_images/clinic-product-display.webp'), alt: 'Skin Atelier product display' },
+    { src: asset('images/clinic_images/clinic-treatment-room-1.webp'), alt: 'Skin Atelier treatment room' },
+    { src: asset('images/clinic_images/clinic-treatment-room-2.webp'), alt: 'Skin Atelier treatment room' },
+    { src: asset('images/clinic_images/clinic-treatment-room-3.webp'), alt: 'Skin Atelier treatment room' },
+  ],
+
   // ─── Welcome / About Section ──────────────────────────────────────────
   welcome: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1200&q=80',
   about: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80',

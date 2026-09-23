@@ -63,11 +63,12 @@ h1, h2, h3, h4, h5, h6 {
   outline-offset: 2px;
 }
 
-/* ─── Fade-up Animation ──────────────────────────────────────────────────── */
+/* ─── Fade-up Animation (Home & About) ───────────────────────────────────── */
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  will-change: opacity, transform;
 }
 
 .fade-up.visible {
@@ -75,13 +76,61 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(0);
 }
 
+/* Staggered children when parent .fade-up becomes .visible */
+.fade-up .fade-up-child {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-up.visible .fade-up-child {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-up.visible .delay-100,
+.fade-up.visible.delay-100 { transition-delay: 100ms; }
+
+.fade-up.visible .delay-150,
+.fade-up.visible.delay-150 { transition-delay: 150ms; }
+
+.fade-up.visible .delay-200,
+.fade-up.visible.delay-200 { transition-delay: 200ms; }
+
+.fade-up.visible .delay-250,
+.fade-up.visible.delay-250 { transition-delay: 250ms; }
+
+.fade-up.visible .delay-300,
+.fade-up.visible.delay-300 { transition-delay: 300ms; }
+
+.fade-up.visible .delay-350,
+.fade-up.visible.delay-350 { transition-delay: 350ms; }
+
+.fade-up.visible .delay-400,
+.fade-up.visible.delay-400 { transition-delay: 400ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up,
+  .fade-up.visible,
+  .fade-up .fade-up-child,
+  .fade-up.visible .fade-up-child {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 /* ─── Image Reveal ───────────────────────────────────────────────────────── */
 .img-reveal {
   overflow: hidden;
+  transform: translateZ(0);
 }
 
 .img-reveal img {
-  transition: transform 0.8s ease-out;
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .img-reveal:hover img {
