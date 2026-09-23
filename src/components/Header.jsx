@@ -155,7 +155,7 @@ const Header = () => {
               }`
             }
           >
-            About
+            About Us
           </NavLink>
 
           {/* Services with Expandable Submenu */}
@@ -219,7 +219,7 @@ const Header = () => {
               }`
             }
           >
-            Contact
+            Contact Us
           </NavLink>
         </nav>
 
