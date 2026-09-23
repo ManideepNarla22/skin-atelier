@@ -55,7 +55,8 @@ const Contact = () => {
                   <h3 className="font-serif text-xl text-stone-900 mb-2">Address</h3>
                   <p className="text-stone-600 leading-relaxed">
                     4th Floor, 1-2-39/10, above Aakruti,<br />
-                    Nizampet Main Road, Hyderabad
+                    Nizampet Main Road, Hyderabad<br />
+                    20 meters from JNTU Metro Station
                   </p>
                 </div>
               </div>
@@ -147,7 +148,8 @@ const Contact = () => {
               <h3 className="text-2xl font-serif text-stone-900 mb-4">Skin Atelier</h3>
               <p className="text-stone-600 mb-8 leading-relaxed text-lg">
                 4th Floor, 1-2-39/10, above Aakruti,<br />
-                Nizampet Main Road, Hyderabad
+                Nizampet Main Road, Hyderabad<br />
+                20 meters from JNTU Metro Station
               </p>
               
               <Button 

@@ -264,7 +264,7 @@ export const businessInfo = {
   name: 'Skin Atelier',
   doctor: 'Dr. Saritha Thotakura',
   doctorFull: 'Dr. Saritha Thotakura, MBBS, MD',
-  address: '4th Floor, 1-2-39/10, above Aakruti, Nizampet Main Road, Hyderabad',
+  address: '4th Floor, 1-2-39/10, above Aakruti, Nizampet Main Road, Hyderabad, 20 meters from JNTU Metro Station',
   phone: '+91 6303050820',
   phoneFormatted: '+91 6303050820',
   phoneTel: 'tel:+916303050820',
