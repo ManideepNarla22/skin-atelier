@@ -84,8 +84,8 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 text-accent flex-shrink-0 mt-0.5" />
                 <span className="text-text-light text-sm leading-relaxed">
-                  4th Floor, 1-2-39/10, above Aakruti, Nizampet Main Road, Hyderabad<br />
-                  20 meters from JNTU Metro Station
+                  4th Floor, 1-2-39/10, above Aakruti,20 meters from JNTU Metro Station,Nizampet Main Road, Hyderabad<br />
+                  
                 </span>
               </li>
               <li className="flex items-start">
