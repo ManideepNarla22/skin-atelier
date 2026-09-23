@@ -23,7 +23,7 @@ const About = () => {
 
   return (
     <div className="w-full">
-      <PageHero 
+      <PageHero
         image={images.hero.about}
         title="About Skin Atelier"
         breadcrumbs="Home > About"
@@ -33,9 +33,9 @@ const About = () => {
       <section ref={aboutRef} className="py-20 md:py-32 px-6 lg:px-8 max-w-7xl mx-auto fade-up">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 md:order-1 fade-up-child delay-100">
-            <img 
-              src={images.about} 
-              alt="About Skin Atelier" 
+            <img
+              src={images.about}
+              alt="About Skin Atelier"
               className="w-full h-auto object-cover rounded-sm"
             />
           </div>
@@ -60,15 +60,24 @@ const About = () => {
               Dr. Saritha Thotakura, MBBS, MD
             </h2>
             <div className="text-gray-700 space-y-6 text-lg">
-              <p>
-                Dr. Saritha Thotakura leads Skin Atelier with a patient-first approach to dermatology and aesthetic medicine. She takes the time to understand each patient's history and goals before recommending a treatment path, combining clinical expertise with a genuine focus on comfort and long-term skin health.
-              </p>
+                <p>
+                  Dr. Saritha Thotakura is a certified dermatologist with over 8 years of experience in the field of dermatology. With a strong commitment to skin health and patient care, she focuses on providing personalized treatment tailored to each patient’s individual skin concerns and needs.
+                </p>
+                <p>
+                  Dr. Saritha completed her MBBS from Kamineni Institute of Medical Sciences and pursued her MD from Mediciti Institute of Medical Sciences, building a strong foundation in the diagnosis and management of various dermatological conditions.
+                </p>
+                <p>
+                   With more than a decade of clinical experience, Dr. Saritha combines her medical expertise with a patient-focused approach. She believes that healthy skin plays an important role in overall well-being and confidence, and takes the time to understand each patient’s concerns before recommending an appropriate treatment plan.
+                </p>
+                <p>
+                   Her approach focuses on safe, effective, and evidence-based dermatological care, with an emphasis on achieving healthy, natural-looking results and helping patients feel confident in their skin.
+                </p>
             </div>
           </div>
           <div className="fade-up-child delay-100">
-            <img 
-              src={images.clinic.doctor} 
-              alt="Dr. Saritha Thotakura, MBBS, MD" 
+            <img
+              src={images.clinic.doctor}
+              alt="Dr. Saritha Thotakura, MBBS, MD"
               className="w-full h-auto object-cover rounded-sm aspect-[4/5]"
             />
           </div>
