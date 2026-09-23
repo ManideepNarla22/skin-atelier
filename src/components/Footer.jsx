@@ -45,9 +45,9 @@ const Footer = () => {
             <h3 className="text-lg font-heading font-semibold text-primary mb-6">Navigation</h3>
             <ul className="space-y-4">
               <li><Link to="/" className="text-text-light hover:text-accent transition-colors text-sm">Home</Link></li>
-              <li><Link to="/about" className="text-text-light hover:text-accent transition-colors text-sm">About</Link></li>
+              <li><Link to="/about" className="text-text-light hover:text-accent transition-colors text-sm">About Us</Link></li>
               <li><Link to="/services" className="text-text-light hover:text-accent transition-colors text-sm">Services</Link></li>
-              <li><Link to="/contact" className="text-text-light hover:text-accent transition-colors text-sm">Contact</Link></li>
+              <li><Link to="/contact" className="text-text-light hover:text-accent transition-colors text-sm">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -91,8 +91,8 @@ const Footer = () => {
               <li className="flex items-start">
                 <Clock className="w-5 h-5 mr-3 text-accent flex-shrink-0 mt-0.5" />
                 <div className="text-text-light text-sm leading-relaxed">
-                  <p>9am – 8pm</p>
-                  <p>Sunday Closed</p>
+                  <p> Monday to Saturday : 9am – 8pm</p>
+                  <p>Sunday : 10am - 3pm</p>
                 </div>
               </li>
             </ul>

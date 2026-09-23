@@ -58,7 +58,7 @@ const Header = () => {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8">
           <NavLink to="/" className={({ isActive }) => `text-sm font-medium hover:text-accent transition-colors ${isActive ? 'text-accent font-semibold' : 'text-text'}`}>Home</NavLink>
-          <NavLink to="/about" className={({ isActive }) => `text-sm font-medium hover:text-accent transition-colors ${isActive ? 'text-accent font-semibold' : 'text-text'}`}>About</NavLink>
+          <NavLink to="/about" className={({ isActive }) => `text-sm font-medium hover:text-accent transition-colors ${isActive ? 'text-accent font-semibold' : 'text-text'}`}>About Us</NavLink>
           
           {/* Services Dropdown */}
           <div 
@@ -95,7 +95,7 @@ const Header = () => {
           </div>
 
 
-          <NavLink to="/contact" className={({ isActive }) => `text-sm font-medium hover:text-accent transition-colors ${isActive ? 'text-accent font-semibold' : 'text-text'}`}>Contact</NavLink>
+          <NavLink to="/contact" className={({ isActive }) => `text-sm font-medium hover:text-accent transition-colors ${isActive ? 'text-accent font-semibold' : 'text-text'}`}>Contact Us</NavLink>
         </nav>
 
         {/* Desktop CTA */}

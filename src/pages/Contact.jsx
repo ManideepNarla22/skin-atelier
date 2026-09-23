@@ -26,7 +26,7 @@ const Contact = () => {
         subtitle="We look forward to hearing from you. Book a consultation with Dr. Saritha Thotakura through the form below, or reach out directly."
         breadcrumbs={[
           { label: 'Home', to: '/' },
-          { label: 'Contact' }
+          { label: 'Contact Us' }
         ]}
       />
 
@@ -95,8 +95,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-serif text-xl text-stone-900 mb-2">Working Hours</h3>
                   <p className="text-stone-600">
-                    <span className="block mb-1">9am – 8pm, daily</span>
-                    <span className="block text-stone-500 text-sm">Sunday: Closed</span>
+                    <span className="block mb-1">Monday to Saturday : 9am – 8pm</span>
+                    <span className="block text-stone-500 text-sm">Sunday : 10am - 3pm</span>
                   </p>
                 </div>
               </div>

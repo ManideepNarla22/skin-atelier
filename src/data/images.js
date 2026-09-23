@@ -18,7 +18,7 @@ const images = {
   hero: {
     home: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1920&q=80',
     services: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1920&q=80',
-    about: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=80',
+    about: `${import.meta.env.BASE_URL}images/clinic_images/clinic-treatment-room-3.jpg`,
     contact: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&q=80',
   },
 
@@ -28,7 +28,7 @@ const images = {
     interior: 'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1200&q=80',
     reception: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80',
     consultation: 'https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=1200&q=80',
-    doctor: asset('assets/doctor.webp'),
+    doctor: asset('assets/doctor.jpeg'),
   },
 
   // ─── Clinic Gallery (About page) ────────────────────────────────────────

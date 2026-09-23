@@ -26,7 +26,7 @@ const About = () => {
       <PageHero
         image={images.hero.about}
         title="About Skin Atelier"
-        breadcrumbs="Home > About"
+        breadcrumbs="Home > About Us"
       />
 
       {/* About Section */}
