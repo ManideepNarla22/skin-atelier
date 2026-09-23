@@ -44,7 +44,8 @@ const images = {
 
   // ─── Welcome / About Section ──────────────────────────────────────────
   welcome: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1200&q=80',
-  about: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80',
+  about: 'assets/about-female-doctor.png',
+
 
   // ─── Three Pillars (Home page) ────────────────────────────────────────
   pillars: {
